@@ -2,6 +2,8 @@
 let input_amigo = document.getElementById('amigo');
 let ul_amigos = document.getElementById('listaAmigos');
 let ul_resultado = document.getElementById('resultado');
+let boton_añadir = document.querySelector('.button-add');
+let boton_sortear_reiniciar = document.querySelector('.button-draw');
 
 //Lista para guardar los nombres de amigos
 let listaAmigos = [];
@@ -47,7 +49,33 @@ function sortearAmigo(){
         //Tomámos el elemento li y colocamos en su texto el valor del array en el indice generado con Math.random
         elementoResultado.appendChild(document.createTextNode(`¡Tu amigo secreto será ${listaAmigos[indiceAmigo]}!`));
         ul_resultado.appendChild(elementoResultado);
+
+        //Desactivamos el input y el botón para añadir los nombres
+        input_amigo.setAttribute('disabled', 'true');
+        boton_añadir.setAttribute('disabled', 'true');
+
+        //Cambiamos el atributo onclick="sortearAmigo()" al botón para que pueda reiniciar la app
+        boton_sortear_reiniciar.setAttribute('onclick', 'comenzarDeNuevo()');
+        //Cambiamos el texto del botón para mostrar el reinicio de la app
+        boton_sortear_reiniciar.innerHTML = '<img src="assets/reload_icon.png" alt="Ícono para recargar">Reiniciar';
     }else{
         alert('No se han agregado amigos');
     }
+}
+
+function comenzarDeNuevo(){
+    //Limpiamos el array
+    listaAmigos = [];
+
+    //Limpiamos la lista del resultado
+    ul_resultado.innerHTML = '';
+    
+    //Habilitamos el input y el botón
+    input_amigo.removeAttribute('disabled');
+    boton_añadir.removeAttribute('disabled');
+    
+    //Cambiamos el atributo de onclick="comenzarDeNuevo()" por onclick="sortearAmigo()"
+    boton_sortear_reiniciar.setAttribute('onclick', 'sortearAmigo()');
+    //Cambiamos el texto del botón para mostrar la ejecución de la app
+    boton_sortear_reiniciar.innerHTML = '<img src="assets/play_circle_outline.png" alt="Ícono para sortear">Sortear amigo';
 }
