@@ -125,6 +125,11 @@ button {
     background-color: #a1a1a1;
 }
 
+.button-add:disabled{
+    background-color: #a1a1a1;
+    cursor: auto;
+}
+
 /* Listas */
 ul {
     list-style-type: none;
