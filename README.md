@@ -24,7 +24,13 @@ En este proyecto puedes colocar los nombres de tus amigos para que la aplicació
 <div align="center">
   <img src="https://i.imgur.com/1CQmYv9.jpeg" alt="Lista de nombres y botón"/>
 </div>  
+
 3.¡Listo, la aplicación te entregará el nombre de tu amigo secreto!  
 <div align="center">
   <img src="https://i.imgur.com/vVtSlxw.jpeg" alt="Resultado final"/>
 </div>  
+
+4.Después de entregarte el nombre, la zona de texto y el botón se bloquearan. Eso quiere decir que ya no recibirá más nombres para ser sorteados. Para reiniciar la aplicación, tendrás que hacer click en el botón con el nombre "Reiniciar". Resulta ser el mismo botón con el que sorteaste los nombres.  
+<div align="center">
+  <img src="https://i.imgur.com/z9AUTiE.jpeg" alt="Botón para reiniciar la aplicación"/>
+</div> 
