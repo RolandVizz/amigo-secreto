@@ -5,7 +5,7 @@
 # Amigo Secreto
 ![Static Badge](https://img.shields.io/badge/HTML-F54927) ![Static Badge](https://img.shields.io/badge/CSS-%23264de4) ![Static Badge](https://img.shields.io/badge/JS-F0DB4F)
 
-Este proyecto fue realizado como parte del challenge propuesto dentro del curso Oracle Next Education impartido por Alura Latam.
+Este proyecto fue realizado como parte del challenge propuesto dentro del curso Oracle Next Education impartido por Alura Latam. Puedes utilizarlo incluso en dispositivos móviles.
 
 ## Vista General  
 <div align="center">
